@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto — SD ACCESS</title>
+  <meta name="description" content="Cotice su proyecto de estacionamiento con SD ACCESS, partner SKIDATA en Panamá.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contacto — SD ACCESS">
+  <meta property="og:description" content="Cotice su proyecto de estacionamiento con SD ACCESS, partner SKIDATA en Panamá.">
+  <meta property="og:image" content="img/web/Banner-hero.webp">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/editorial.css">
+</head>
+<body class="ed" id="top">
+  <a href="#contenido" class="ed-skip">Saltar al contenido</a>
+
+  <header class="ed-header">
+    <div class="ed-header__inner fade-in" style="--d: 0.5s">
+      <div class="ed-bar">
+        <a href="index.html" class="ed-logo"><img src="img/web/Logo_SD_Access-400.png" width="32" height="32" alt=""><span>SD ACCESS</span></a>
+        <nav class="ed-nav" id="site-nav" aria-label="Principal">
+          <a href="index.html">Inicio</a>
+          <a href="productos.html">Productos</a>
+          <a href="instalaciones.html">Instalaciones</a>
+          <a href="nosotros.html">Nosotros</a>
+        </nav>
+        <a href="contacto.html" class="ed-cta">Cotizar<span class="ed-cta__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+        <button type="button" class="ed-toggle" aria-label="Menú" aria-expanded="false" aria-controls="site-nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="ed-curtain">
+    <main id="contenido">
+      <section class="ed-page-hero">
+        <p class="ed-eyebrow fade-in" style="--d: 0.1s">Contacto</p>
+        <div class="ed-page-hero__row">
+          <h1><span class="ed-hl"><span class="w hw" style="--i: 0"><span>Cotice</span></span> <span class="w hw" style="--i: 1"><span>su</span></span></span> <span class="ed-hl"><span class="w hw" style="--i: 2"><span>proyecto.</span></span></span></h1>
+          <p class="ed-page-hero__lead fade-in" style="--d: 0.55s">Cuéntenos sobre su estacionamiento y un asesor le responderá con una propuesta a la medida.</p>
+        </div>
+      </section>
+      <section class="ed-contact" aria-label="Formulario y datos de contacto">
+        <form class="ed-form fade-in" id="cotizacion-form" novalidate style="--d: 0.6s">
+          <p class="ed-eyebrow">Solicitud de cotización</p>
+          <div class="ed-form__row">
+            <label class="ed-field" for="f-nombre">Nombre <em>(obligatorio)</em><input type="text" id="f-nombre" name="nombre" required aria-required="true" autocomplete="name"></label>
+            <label class="ed-field" for="f-empresa">Empresa<input type="text" id="f-empresa" name="empresa" autocomplete="organization"></label>
+          </div>
+          <div class="ed-form__row">
+            <label class="ed-field" for="f-telefono">Teléfono<input type="tel" id="f-telefono" name="telefono" autocomplete="tel"></label>
+            <label class="ed-field" for="f-tipo">Tipo de instalación
+              <select id="f-tipo" name="tipo">
+                <option value="">Seleccione…</option>
+                <option>Mall / centro comercial</option>
+                <option>Aeropuerto</option>
+                <option>Oficinas</option>
+                <option>Residencial / PH</option>
+                <option>Plaza comercial</option>
+                <option>Hospital u hotel</option>
+                <option>Otro</option>
+              </select>
+            </label>
+          </div>
+          <label class="ed-field" for="f-mensaje">¿Qué necesita? <em>(obligatorio)</em><textarea id="f-mensaje" name="mensaje" rows="6" required aria-required="true" placeholder="Ej.: 2 entradas y 1 salida, cajero automático, lectura de placas…"></textarea></label>
+          <p class="ed-form__error" id="cotizacion-error" role="alert" hidden>Complete su nombre y lo que necesita.</p>
+          <div class="ed-form__actions">
+            <button type="submit" class="ed-btn ed-btn--primary js-cotizacion-submit">Enviar por correo</button>
+            <a href="#" class="ed-form__alt js-cotizacion-mail" hidden>o envíela por correo</a>
+          </div>
+        </form>
+
+        <aside class="ed-dark ed-aside fade-in" data-spot style="--d: 0.8s" aria-label="Contacto directo">
+          <div class="ed-dark__glow" aria-hidden="true"></div>
+          <div>
+            <p class="ed-eyebrow">Contacto directo</p>
+            <div class="ed-aside__list">
+              <div class="ed-aside__item"><p class="ed-eyebrow">Teléfono</p><a href="tel:+5073966976" class="ed-aside__phone tint">+507 396 6976</a></div>
+              <div class="ed-aside__item js-whatsapp-item" hidden><p class="ed-eyebrow">WhatsApp</p><a href="#" class="ed-aside__mail js-whatsapp-link" target="_blank" rel="noopener">Escríbanos</a></div>
+              <div class="ed-aside__item"><p class="ed-eyebrow">Correo</p><a href="mailto:info@sdaccess.com.pa" class="ed-aside__mail tint">info@sdaccess.com.pa</a></div>
+              <div class="ed-aside__item"><p class="ed-eyebrow">Oficina</p><p class="ed-aside__addr tint-soft">Edificio 37E, piso 8, oficina 806<br>Santa María Business District, Panamá</p></div>
+            </div>
+          </div>
+          <div class="ed-aside__links">
+            <a href="tel:+5073966976" class="ed-btn ed-btn--lg">Llamar al +507 396 6976</a>
+            <div class="ed-social">
+              <a href="https://www.instagram.com/sd_access/" target="_blank" rel="noopener" aria-label="Instagram de SD ACCESS"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+              <a href="https://www.linkedin.com/company/sd-access" target="_blank" rel="noopener" aria-label="LinkedIn de SD ACCESS"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <footer class="ed-footer">
+    <div class="ed-footer__grid">
+      <div class="ed-footer__brand">
+        <a href="index.html" class="ed-footer__logo fx" style="--s: 0"><img src="img/web/Logo_SD_Access-400.png" width="44" height="44" alt="" loading="lazy" decoding="async"><span>SD ACCESS</span></a>
+        <p class="ed-footer__about fx" style="--s: 1">Partner SKIDATA en Panamá. Sistemas inteligentes de parking, barreras, cajeros y control de acceso.</p>
+      </div>
+      <nav aria-label="Páginas">
+        <h2 class="fx" style="--s: 2">Páginas</h2>
+        <ul>
+          <li class="fx" style="--s: 3"><a href="index.html">Inicio</a></li>
+          <li class="fx" style="--s: 4"><a href="productos.html">Productos</a></li>
+          <li class="fx" style="--s: 5"><a href="instalaciones.html">Instalaciones</a></li>
+          <li class="fx" style="--s: 6"><a href="nosotros.html">Nosotros</a></li>
+          <li class="fx" style="--s: 7"><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Equipos">
+        <h2 class="fx" style="--s: 8">Equipos</h2>
+        <ul>
+          <li class="fx" style="--s: 9"><a href="productos.html">Entrada y salida</a></li>
+          <li class="fx" style="--s: 10"><a href="productos.html">Pago</a></li>
+          <li class="fx" style="--s: 11"><a href="productos.html">Peatonal y puertas</a></li>
+          <li class="fx" style="--s: 12"><a href="productos.html">Software</a></li>
+        </ul>
+      </nav>
+      <div class="ed-footer__contact">
+        <h2 class="fx" style="--s: 15">Contacto</h2>
+        <p class="fx" style="--s: 16"><a href="tel:+5073966976">+507 396 6976</a></p>
+        <p class="fx" style="--s: 17"><a href="mailto:info@sdaccess.com.pa">info@sdaccess.com.pa</a></p>
+        <p class="ed-footer__addr fx" style="--s: 18">Edificio 37E, piso 8, oficina 806<br>Santa María Business District, Panamá</p>
+        <div class="ed-social fx" style="--s: 19">
+          <a href="https://www.instagram.com/sd_access/" target="_blank" rel="noopener" aria-label="Instagram de SD ACCESS"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+          <a href="https://www.linkedin.com/company/sd-access" target="_blank" rel="noopener" aria-label="LinkedIn de SD ACCESS"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="ed-footer__bar fx" style="--s: 20">
+      <span>Partner SKIDATA · Panamá</span>
+      <span>© 2026 SD ACCESS S.A. · Panamá</span>
+      <a href="#top">Volver arriba <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
+    </div>
+    <div class="ed-wordmark" aria-hidden="true"><p class="fx fxw" style="--s: 21">SD ACCESS</p></div>
+  </footer>
+
+  <script src="js/v2.js"></script>
+</body>
+</html>
