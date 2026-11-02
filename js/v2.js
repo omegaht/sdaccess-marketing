@@ -125,9 +125,11 @@
     });
   }
 
-  // Videos en bucle: botón de pausa (WCAG 2.2.2) y sin autoplay con movimiento reducido
+  // Videos en bucle: botón de pausa (WCAG 2.2.2) y sin autoplay con movimiento reducido.
+  // Llevan data-autoplay y preload="none" en lugar de autoplay: así no se descargan
+  // mientras su panel de proyecto está oculto; se reproducen al entrar en pantalla.
   var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  document.querySelectorAll('video[autoplay]').forEach(function (video) {
+  document.querySelectorAll('video[data-autoplay]').forEach(function (video) {
     var btn = document.createElement('button');
     btn.type = 'button';
     btn.className = 'ed-video-toggle';
@@ -142,10 +144,6 @@
 
     var userStarted = false;
     var userPaused = false;
-    if (reduceMotion) {
-      video.autoplay = false;
-      video.pause();
-    }
 
     btn.addEventListener('click', function () {
       userStarted = true;
@@ -165,11 +163,7 @@
         });
       }, { threshold: 0.5 }).observe(video);
     }
-    video.addEventListener('play', function () {
-      // el autoplay puede arrancar después de quitar el atributo
-      if (reduceMotion && !userStarted) video.pause();
-      sync();
-    });
+    video.addEventListener('play', sync);
     video.addEventListener('pause', sync);
     sync();
     video.parentNode.appendChild(btn);
