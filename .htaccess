@@ -1,0 +1,32 @@
+# Apache / LiteSpeed (the current www.sdaccess.com.pa host). Other hosts need the
+# equivalent rules in their own format (e.g. Netlify/Cloudflare _redirects).
+RewriteEngine On
+
+# One canonical host: https://www.sdaccess.com.pa
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^ https://www.sdaccess.com.pa%{REQUEST_URI} [R=301,L]
+
+# The old site's installations page used a capital I
+RewriteRule ^Instalaciones\.html$ /instalaciones.html [R=301,L]
+
+# /index.html -> / so the home page has one URL
+RewriteCond %{THE_REQUEST} \s/index\.html[\s?]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Long cache for static assets
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType video/mp4 "access plus 1 year"
+  ExpiresByType text/css "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+</IfModule>
+
+# Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/xml text/plain
+</IfModule>
